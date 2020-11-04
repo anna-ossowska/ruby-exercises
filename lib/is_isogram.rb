@@ -10,15 +10,9 @@ def is_isogram(string)
   # count the total number of unique elemnts
   letters_unique = letters.uniq.count
   # if numbers are equal, a string is an isogram
-  if letters_total == letters_unique
-    return true
-  else
-    return false
-  end
+  letters_total == letters_unique ? true : false
 end
 
 # puts is_isogram("Dermatoglyphics")
 # puts is_isogram("aba")
 # puts is_isogram("moOse")
-
-
